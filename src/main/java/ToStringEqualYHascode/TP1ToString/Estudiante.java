@@ -13,6 +13,6 @@ public class Estudiante extends Persona{
         return super.toString() +
                 "Estudiante{" +
                 "carrera='" + carrera + '\'' +
-                '}';
+                "}\n";
     }
 }
