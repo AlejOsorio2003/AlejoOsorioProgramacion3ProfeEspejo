@@ -17,10 +17,9 @@ public class Curso {
 
     @Override
     public String toString() {
-        return "Curso{" +
-                "nombre='" + nombre + '\'' +
-                ", profesor='" + profesor + '\'' +
-                ", listaDeEstudiantes=" + listaDeEstudiantes +
-                '}';
+        return
+                "nombre: " + nombre + '\n' +
+                "profesor: " + profesor + '\n' +
+                "listaDeEstudiantes: " + listaDeEstudiantes;
     }
 }
