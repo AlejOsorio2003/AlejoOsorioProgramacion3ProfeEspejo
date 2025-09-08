@@ -15,6 +15,8 @@ public class Main {
         estudiantes.add(estudiante2);
         estudiantes.add(estudiante3);
 
-        System.out.println(estudiantes);
+        for (Estudiante estudiante : estudiantes) {
+            System.out.println(estudiante);
+        }
     }
 }
