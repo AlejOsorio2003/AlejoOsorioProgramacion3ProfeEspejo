@@ -1,6 +1,6 @@
 package Spring.EjercicioSpringBoot.Controladores;
 
-import Spring.EjercicioSpringBoot.Estudiante;
+import Spring.EjercicioSpringBoot.Entidades.Estudiante;
 import Spring.EjercicioSpringBoot.Repositorios.EstudianteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

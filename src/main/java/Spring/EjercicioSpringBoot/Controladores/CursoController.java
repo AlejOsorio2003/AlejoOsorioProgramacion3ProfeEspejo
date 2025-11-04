@@ -1,8 +1,10 @@
 package Spring.EjercicioSpringBoot.Controladores;
 
-import Spring.EjercicioSpringBoot.*;
+import Spring.EjercicioSpringBoot.Entidades.Curso;
+import Spring.EjercicioSpringBoot.Entidades.Estudiante;
+import Spring.EjercicioSpringBoot.Entidades.Profesor;
 import Spring.EjercicioSpringBoot.Repositorios.*;
-import Spring.EjercicioSpringBoot.CursoDTO;
+import Spring.EjercicioSpringBoot.Entidades.DTO.Curso.CursoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

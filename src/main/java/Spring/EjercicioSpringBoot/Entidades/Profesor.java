@@ -1,17 +1,17 @@
-package Spring.EjercicioSpringBoot;
+package Spring.EjercicioSpringBoot.Entidades;
 
 import jakarta.persistence.*;
 import java.util.*;
 
 @Entity
-public class Estudiante {
+public class Profesor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private String matricula;
+    private String email;
 
-    @ManyToMany(mappedBy = "estudiantes", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Curso> cursos = new ArrayList<>();
 
     public Long getId() { return id; }
@@ -20,8 +20,8 @@ public class Estudiante {
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public String getMatricula() { return matricula; }
-    public void setMatricula(String matricula) { this.matricula = matricula; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
     public List<Curso> getCursos() { return cursos; }
     public void setCursos(List<Curso> cursos) { this.cursos = cursos; }

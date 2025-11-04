@@ -1,4 +1,4 @@
-package Spring.EjercicioSpringBoot;
+package Spring.EjercicioSpringBoot.Entidades;
 
 import jakarta.persistence.*;
 import java.util.*;
